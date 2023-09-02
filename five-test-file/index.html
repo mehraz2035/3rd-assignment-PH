@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/Logo.png" type="image/x-icon">
+
+    <!-- tailwind & daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--custom style -->
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+        }
+        .red{
+           background-color:#FF1F3D ; 
+           color: white;
+        }
+        .red1{
+           background-color:#FF1F3D ; 
+           color: white;
+        }
+        #button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        }
+   
+    </style>
+
+    <!-- title -->
+    <title>PH Tube</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar bg-base-100 border-b-2 px-10">
+            <div class="navbar-start">
+              <a class="btn btn-ghost normal-case"><img class="w-40" src="images/Logo.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <button id="sort-by-views" class="btn">Sort by view</button>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn red1 text-white">Blog</a>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <!-- button sec -->
+        <section>
+            <div id="button-container" class="pt-5">
+                
+            </div>
+        </section>
+        <!-- cards section -->
+        <section id="card-container" class="container mx-auto pt-10 gap-x-5 gap-y-10 grid grid-cols-4">
+           
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <!-- js Scripts -->
+    <!-- <script src="js/all.js"></script> -->
+    <script src="js/buttons.js"></script>
+    <script src="js/cards.js"></script>
+</body>
+</html>
